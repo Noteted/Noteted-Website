@@ -13,6 +13,6 @@ async function loadInformation() {
     document.getElementById('infomation').innerHTML = data;
   } catch (error) {
     console.error('Error loading infomation data:', error);
-    document.getElementById('infomation').innerHTML = '<p style="color: red;">Error loading infomation data. Please check the console for details.</p>';
+    document.getElementById('infomation').innerHTML = '<p>Whoops! Error loading links data.</p>';
   }
 }
