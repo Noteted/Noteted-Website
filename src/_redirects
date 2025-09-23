@@ -1,2 +1,6 @@
-/       /html/main.html 200
-/*      /html/notFound.html 404
+/docs/                  /html/docs/gettingStarted.html 200
+/docs/ui                /html/docs/userInterface.html 200
+/docs/todo              /html/docs/TODOrenderer.html 200
+
+/                       /html/main/main.html 200
+/*                      /html/main/notFound.html 404

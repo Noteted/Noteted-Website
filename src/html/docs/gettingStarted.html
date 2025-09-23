@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/main.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/figlet/lib/figlet.js"></script>
+    <title>Noteted Website</title>
+
+    <link rel="icon" href="/assets/NTD.png" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/NTD.png" type="image/png">
+
+    <meta content="Noteted" property="og:title" />
+    <meta content="An open-source, free and simple note taking app." property="og:description" />
+    <meta content="https://noteted.netlify.app" property="og:url" />
+    <meta content="/assets/NTD.png" property="og:image" />
+    <meta content="#141414" data-react-helmet="true" name="theme-color" />
+</head>
+<body>
+    <pre id="notetedFiglet"></pre>
+    <hr>
+    <span id="links"></span>
+    <span id="redirects"></span>
+    <hr>
+    <h1>Gettin' started with Noteted</h1>
+    <p>
+        So, you opened Noteted for the first time, and you want to know how to use it. This guide will help you get started with the basics of Noteted.
+    </p>
+
+    <hr>
+
+    <ul>
+        <h2>Here are the basics you need to know.</h2>
+        <li>Noteted has a markdown support. All your markdown files are rendered as HTML and a preview on the right.</li>
+        <li>Noteted has a simplistic choice of UI for ease of use.</li>
+        <li>Noteted has a custom TODO list file support called <code>.td</code>.</li>
+        <li>Noteted is built in Python and has rendering issues with <code>customtkinter</code>, but no one cares anyways.</li>
+    </ul>
+
+    <hr>
+    <h2> Great, now we can start! </h2>
+    <ul>
+        <li><a href="/docs/ui"> User interface </a></li>
+        <li><a href="/docs/todo"> TODO Renderer </a></li>
+    </ul>
+    <p>Still a work in progress, please be patient!</p>
+
+    <script src="/js/figletNoted.js"></script>
+    <script src="/js/loadLinks.js"></script>
+    <script src="/js/loadRedirects.js"></script>
+</body>
+</html>

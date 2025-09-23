@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 async function loadInformation() {
   try {
-    const response = await fetch('/data/info.md');
+    const response = await fetch('/data/info.html');
     const data = await response.text();
     // const formattedData = data.replace(/\n/g, '<br>');
     document.getElementById('infomation').innerHTML = data;

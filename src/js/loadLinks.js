@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 async function loadLinks() {
   try {
-    const response = await fetch('/data/links.md');
+    const response = await fetch('/data/links.html');
     const data = await response.text();
     document.getElementById('links').innerHTML = data;
   } catch (error) {
