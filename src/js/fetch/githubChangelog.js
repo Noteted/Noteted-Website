@@ -1,24 +1,22 @@
-document.addEventListener('DOMContentLoaded', function () {
-    getLatestRelease();
-});
-
 async function getLatestRelease() {
-    const apiUrl = `https://api.github.com/repos/Daveberry-Stuff/Noteted/releases/latest`;
-
+    // sleeps for 500 ms so it actually displays it in the website without it being bugged
+    await sleep(500);
+    
     try {
+        const apiUrl = `https://api.github.com/repos/Daveberry-Stuff/Noteted/releases/latest`;
         const response = await fetch(apiUrl, {
             headers: {
                 'User-Agent': 'Node.js Fetch Release Script',
                 'Accept': 'application/vnd.github.v3+json',
             },
         });
-
+        
         if (!response.ok) {
             throw new Error(`GitHub API error: ${response.status} ${response.statusText}`);
         }
-
+        
         const releaseData = await response.json();
-
+        
         const version = releaseData.tag_name;
         const releaseDate = releaseData.published_at.substring(0, 10);
         const changelogBody = releaseData.body;
@@ -34,3 +32,10 @@ async function getLatestRelease() {
         console.error('Failed to fetch latest release:', error.message);  
     }
 }
+
+// the code mimir (I got this code from google)
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+getLatestRelease();
