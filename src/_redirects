@@ -1,6 +1,12 @@
-/docs/                  /html/docs/gettingStarted.html 200
-/docs/ui                /html/docs/userInterface.html 200
-/docs/todo              /html/docs/TODOrenderer.html 200
+/docs/                      /html/docs/gettingStarted.html 200
 
-/                       /html/main/main.html 200
-/*                      /html/main/notFound.html 404
+/docs/interface/first       /html/docs/interface/firstTime.html 200
+/docs/interface/ui          /html/docs/interface/userInterface.html 200
+/docs/interface/update      /html/docs/interface/updateInterface.html 200
+
+/docs/renderers/todo        /html/docs/render/TODO.html 200
+/docs/renderers/markdown    /html/docs/render/Markdown.html 200
+/docs/renderers/text        /html/docs/render/Text.html 200
+
+/                           /html/main/main.html 200
+/*                          /html/main/notFound.html 404

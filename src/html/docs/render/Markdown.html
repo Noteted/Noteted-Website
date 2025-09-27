@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/main.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/figlet/lib/figlet.js"></script>
+    <title>Noteted Website - Markdown Renderer</title>
+
+    <link rel="icon" href="/assets/NTD.png" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/NTD.png" type="image/png">
+
+    <meta content="Noteted" property="og:title" />
+    <meta content="An open-source, free and simple note taking app." property="og:description" />
+    <meta content="https://noteted.netlify.app" property="og:url" />
+    <meta content="/assets/NTD.png" property="og:image" />
+    <meta content="#141414" data-react-helmet="true" name="theme-color" />
+</head>
+<body>
+    <pre id="notetedFiglet"></pre>
+    <hr>
+    <span id="links"></span>
+    <span id="redirects"></span>
+    <hr>
+    <h1>Well, the Markdown renderer should be explaintory.</h1>
+    <a href="/assets/docs/renderers/Markdown Example.gif"><img src="/assets/docs/renderers/Markdown Example.gif" style="width: 50%; border-radius: 3px;"></a>
+    
+    <h2>Few key things to note:</h2>
+    <ul>
+        <li>Current markdown version of Noteted isn't fully markdown because of <code>tkhtmlview</code>. Though, I am trying my best to actually have all the markdown stuff!</li>
+        <li>If you're adding an image, please paste the <code>URL</code> instead of putting it manually. It causes severe lag through <code>PIL</code> (also known as pillow) and <code>tkhtmlview</code>.</li>
+        <li>Please, do not use this for making <code>README.md</code>. Use a reliable editor for making README like Visual Studio Code.</li>
+    </ul>
+
+    <script src="/js/figletNoted.js"></script>
+    <script src="/js/load/loadLinks.js"></script>
+    <script src="/js/load/loadRedirects.js"></script>
+</body>
+</html>
