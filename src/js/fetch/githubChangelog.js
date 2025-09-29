@@ -3,7 +3,7 @@ async function getLatestRelease() {
     await sleep(500);
     
     try {
-        const apiUrl = `https://api.github.com/repos/Daveberry-Stuff/Noteted/releases/latest`;
+        const apiUrl = `https://api.github.com/repos/Noteted/Noteted/releases/latest`;
         const response = await fetch(apiUrl, {
             headers: {
                 'User-Agent': 'Node.js Fetch Release Script',
