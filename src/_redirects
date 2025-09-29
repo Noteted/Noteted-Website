@@ -8,5 +8,8 @@
 /docs/renderers/markdown    /html/docs/render/Markdown.html 200
 /docs/renderers/text        /html/docs/render/Text.html 200
 
+/docs/theme/builtTheme      /html/docs/theme/BuiltInTheme.html 200
+/docs/theme/customTheme     /html/docs/theme/CustomTheming.html 200
+
 /                           /html/main/main.html 200
 /*                          /html/main/notFound.html 404

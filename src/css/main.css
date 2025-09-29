@@ -35,3 +35,12 @@
 } .githubChangelog {
     color: rgb(255, 255, 255);
 }
+
+.codeBox {
+    background-color: rgb(15, 15, 15);
+    border-radius: 10px;
+    width: min-content;
+} .codeBox > .codeInAbox {
+    margin-left: 30px;
+    margin-right: 30px;
+}
