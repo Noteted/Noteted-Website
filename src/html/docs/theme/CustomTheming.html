@@ -17,84 +17,99 @@
     <meta content="#141414" data-react-helmet="true" name="theme-color" />
 </head>
 <body>
-    <pre id="notetedFiglet"></pre>
-    <hr>
-    <span id="links"></span>
-    <span id="redirects"></span>
-    <hr>
-    <h1>Make it look weird? Make it look good? Or, make it look <b>AWESOME</b>?!</h1>
-    <p>The creativity is on your hands!</p>
-    
-    <hr>
-
-    <h2>Heres an example on what I've made!</h2>
-    <div class="flexClass">
-        <div>
-            <h2 align="center"> Amethyst </h2>
-            <a href="/assets/docs/theme/custom theming/amethyst.png"><img src="/assets/docs/theme/custom theming/amethyst.png" width="100%"></a>
-        </div>
-
-        <div>
-            <h2 align="center"> Green </h2>
-            <a href="/assets/docs/theme/custom theming/green.png"><img src="/assets/docs/theme/custom theming/green.png" width="100%"></a>
-        </div>
+    <div class="buttonContainer">
+        <a class="home button inactive" href="/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Home.svg" class="icon">
+                <span class="iconText">Home</span>
+            </div>
+        </a>
+        <a class="info button active" href="/docs">
+            <div class="iconContainer">
+                <img src="/assets/icons/Infomation.svg" class="icon">
+                <span class="iconText">Info</span>
+            </div>
+        </a>
+        <a class="github button inactive" href="https://github.com/Noteted/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Github.svg" class="icon">
+                <span class="iconText">Github</span>
+            </div>
+        </a>
     </div>
+    
+    <div class="mainFrame">
+        <section>
+            <h1>Make it look weird? Make it look good? Or, make it look <b>AWESOME</b>?!</h1>
+            <p>The creativity is on your hands!</p>
+        </section>
+        
+        <section>
+            <h2>Heres an example on what I've made!</h2>
+            <div class="flexClass">
+                <div>
+                    <h2 align="center"> Amethyst </h2>
+                    <a href="/assets/docs/theme/custom theming/amethyst.png"><img src="/assets/docs/theme/custom theming/amethyst.png" width="100%"></a>
+                </div>
 
-    <hr>
+                <div>
+                    <h2 align="center"> Green </h2>
+                    <a href="/assets/docs/theme/custom theming/green.png"><img src="/assets/docs/theme/custom theming/green.png" width="100%"></a>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>How do I make a custom theme?</h2>
+            <p>
+                Glad ya' asked! <br>
+                Here's the code for the main themes.
+            </p>
 
-    <h2>How do I make a custom theme?</h2>
-    <p>
-        Glad ya' asked! <br>
-        Here's the JSON file code.
-    </p>
+            <div class="flexClass">
+                <a class="mainFrameButton" style="color: white;" onClick="darkTheme()">
+                    <img src="/assets/icons/Download.svg" style="width: 2em; height: 2em;">
+                    <span>Dark Theme</span>
+                </a>
+                
+                <a class="mainFrameButton" style="color: white;" onClick="lightTheme()">
+                    <img src="/assets/icons/Download.svg" style="width: 2em; height: 2em;">
+                    <span>Light Theme</span>
+                </a>
 
-    <div class="codeBox"> <pre class="codeInAbox"> <code>
-{
-    "accentColor": "#008BFF",
-    "secondaryColor": "#007BE0",
-    "hoverColor": "#006EC9",
-    "backgroundColor": "#242424",
-
-    "frameColor": "#1E1E1E",
-    "textBoxColor": "#343638",
-    "selectedColor": "#2b2b2b",
-    "frameHoverColor": "#555555",
-    "rightClickMenuColor": "#222222",
-
-    "frameTextColor": "#FFFFFF",
-    "textColor": "#FFFFFF",
-    "buttonColor": "#FFFFFF",
-
-    "ctkWindowAppearanceMode": "dark",
-    "ctkDefaultColorTheme": "dark-blue"
-}
-    </code> </pre> </div>
-
-    <p>
-        <ul>
-            <li>Copy that code</li>
-            <li>Depending on your operating system, your custom theme folder is at</li>
-            <ul>
-                <li>Windows: ~/Appdata/Roaming/Noteted/themes</li>
-                <li>Linux: ~/.config/Noteted/themes</li>
-                <li>MacOS: ~/Library/Application Support/Noteted/themes</li>
-            </ul>
-            <li>Make a new json file with whatever name you want</li>
-            <li>Paste the code in the json file</li>
-            <li>Edit it a little bit and then you're done</li>
-        </ul>
-    </p>
-
-    <hr>
-
-    <h2>Too lazy to make yourself?</h2>
-    <p>
-        You can use other user's custom themes! <br>
-        Just go ahead and find it at <a href="https://github.com/Noteted/Noteted-Custom">Noteted Custom Github Repository</a>
-    </p>
-
-    <script src="/js/figletNoted.js"></script>
-    <script src="/js/load/loadLinks.js"></script>
-    <script src="/js/load/loadRedirects.js"></script>
+                <a class="mainFrameButton" style="color: white;" onClick="pureBlackTheme()">
+                    <img src="/assets/icons/Download.svg" style="width: 2em; height: 2em;">
+                    <span>Pure Black Theme</span>
+                </a>
+            </div>
+        </section>
+        
+        <section>
+            <p>
+                <h2>Here are the steps for ya'</h2>
+                <ul>
+                    <li>Download that code.</li>
+                    <li>Depending on your operating system, your custom theme folder is at.</li>
+                    <ul>
+                        <li>Windows: ~/Appdata/Roaming/Noteted/themes</li>
+                        <li>Linux: ~/.config/Noteted/themes</li>
+                        <li>MacOS: ~/Library/Application Support/Noteted/themes</li>
+                    </ul>
+                    <li>Drag and drop it to your custom theme's folder.</li>
+                    <li>Edit it a little bit and then you're done!</li>
+                </ul>
+            </p>
+        </section>
+        
+        <section>
+            <h2>Too lazy to make yourself?</h2>
+            <p>
+                You can use other user's custom themes! <br>
+                Just go ahead and find it at <a href="https://github.com/Noteted/Noteted-Custom">Noteted Custom Github Repository</a>
+            </p>
+        </section>
+    </div>
+    
+    <script src="/js/downloadTheme.js"></script>
 </body>
 </html>

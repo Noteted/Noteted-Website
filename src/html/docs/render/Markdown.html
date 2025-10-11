@@ -17,23 +17,41 @@
     <meta content="#141414" data-react-helmet="true" name="theme-color" />
 </head>
 <body>
-    <pre id="notetedFiglet"></pre>
-    <hr>
-    <span id="links"></span>
-    <span id="redirects"></span>
-    <hr>
-    <h1>Well, the Markdown renderer should be explaintory.</h1>
-    <a href="/assets/docs/renderers/Markdown Example.gif"><img src="/assets/docs/renderers/Markdown Example.gif" style="width: 100%; border-radius: 3px;"></a>
+    <div class="buttonContainer">
+        <a class="home button inactive" href="/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Home.svg" class="icon">
+                <span class="iconText">Home</span>
+            </div>
+        </a>
+        <a class="info button active" href="/docs">
+            <div class="iconContainer">
+                <img src="/assets/icons/Infomation.svg" class="icon">
+                <span class="iconText">Info</span>
+            </div>
+        </a>
+        <a class="github button inactive" href="https://github.com/Noteted/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Github.svg" class="icon">
+                <span class="iconText">Github</span>
+            </div>
+        </a>
+    </div>
     
-    <h2>Few key things to note:</h2>
-    <ul>
-        <li>Current markdown version of Noteted isn't fully markdown because of <code>tkhtmlview</code>. Though, I am trying my best to actually have all the markdown stuff!</li>
-        <li>If you're adding an image, please paste the <code>URL</code> instead of putting it manually. It causes severe lag through <code>PIL</code> (also known as pillow) and <code>tkhtmlview</code>.</li>
-        <li>Please, do not use this for making <code>README.md</code>. Use a reliable editor for making README like Visual Studio Code.</li>
-    </ul>
-
-    <script src="/js/figletNoted.js"></script>
-    <script src="/js/load/loadLinks.js"></script>
-    <script src="/js/load/loadRedirects.js"></script>
+    <div class="mainFrame">
+        <section>
+            <h1>Well, the Markdown renderer should be explaintory.</h1>
+            <a href="/assets/docs/renderers/Markdown Example.gif"><img src="/assets/docs/renderers/Markdown Example.gif" style="width: 100%; border-radius: 3px;"></a>
+        </section>
+        
+        <section>
+            <h2>Few key things to note:</h2>
+            <ul>
+                <li>Current markdown version of Noteted isn't fully markdown because of <code>tkhtmlview</code>. Though, I am trying my best to actually have all the markdown stuff!</li>
+                <li>If you're adding an image, please paste the <code>URL</code> instead of putting it manually. It causes severe lag through <code>PIL</code> (also known as pillow) and <code>tkhtmlview</code>.</li>
+                <li>Please, do not use this for making <code>README.md</code>. Use a reliable editor for making README like Visual Studio Code.</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>

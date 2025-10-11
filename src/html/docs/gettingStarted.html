@@ -17,47 +17,64 @@
     <meta content="#141414" data-react-helmet="true" name="theme-color" />
 </head>
 <body>
-    <pre id="notetedFiglet"></pre>
-    <hr>
-    <span id="links"></span>
-    <span id="redirects"></span>
-    <hr>
-    <h1>Gettin' started with Noteted</h1>
-    <ul>
-        <h2>Here are the basics you need to know.</h2>
-        <li>Noteted has a markdown support. All your markdown files are rendered as HTML and a preview on the right.</li>
-        <li>Noteted has a simplistic choice of UI for ease of use.</li>
-        <li>Noteted has a custom TODO list file support called <code>.td</code>.</li>
-        <li>Noteted is built in Python and has rendering issues with <code>customtkinter</code>, but no one cares anyways.</li>
-    </ul>
-
-    <hr>
-    <h2> Great, now we can start! </h2>
-    <ul>
-        <li><h2>User Interface</h2></li>
-        <ul>
-            <li><a href="/docs/interface/first"> First time use </a></li>
-            <li><a href="/docs/interface/ui"> Main User Interface </a></li>
-            <li><a href="/docs/interface/update"> Update interface </a></li>
-        </ul>
+    <div class="buttonContainer">
+        <a class="home button inactive" href="/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Home.svg" class="icon">
+                <span class="iconText">Home</span>
+            </div>
+        </a>
+        <a class="info button active" href="/docs">
+            <div class="iconContainer">
+                <img src="/assets/icons/Infomation.svg" class="icon">
+                <span class="iconText">Info</span>
+            </div>
+        </a>
+        <a class="github button inactive" href="https://github.com/Noteted/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Github.svg" class="icon">
+                <span class="iconText">Github</span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="mainFrame">
+        <section>
+            <h1>Gettin' started with Noteted</h1>
+            <ul>
+                <h2>Here are the basics you need to know.</h2>
+                <li>Noteted has a markdown support. All your markdown files are rendered as HTML and a preview on the right.</li>
+                <li>Noteted has a simplistic choice of UI for ease of use.</li>
+                <li>Noteted has a custom TODO list file support called <code>.td</code>.</li>
+                <li>Noteted is built in Python and has rendering issues with <code>customtkinter</code>, but no one cares anyways.</li>
+            </ul>
+        </section>
         
-        <li><h2>Renderers</h2></li>
-        <ul>
-            <li><a href="/docs/renderers/todo"> TODO </a></li>
-            <li><a href="/docs/renderers/markdown"> Markdown </a></li>
-            <li><a href="/docs/renderers/text"> Text </a></li>
-        </ul>
-
-        <li><h2>Theming</h2></li>
-        <ul>
-            <li><a href="/docs/theme/builtTheme"> Built in themes </a></li>
-            <li><a href="/docs/theme/customTheme"> Custom Theming </a></li>
-        </ul>
-    </ul>
-    <p>Still a work in progress, please be patient!</p>
-
-    <script src="/js/figletNoted.js"></script>
-    <script src="/js/load/loadLinks.js"></script>
-    <script src="/js/load/loadRedirects.js"></script>
+        <section>
+            <h2> Great, now we can start! </h2>
+            <ul>
+                <li><h2>User Interface</h2></li>
+                <ul>
+                    <li><a href="/docs/interface/first"> First time use </a></li>
+                    <li><a href="/docs/interface/ui"> Main User Interface </a></li>
+                    <li><a href="/docs/interface/update"> Update interface </a></li>
+                </ul>
+                
+                <li><h2>Renderers</h2></li>
+                <ul>
+                    <li><a href="/docs/renderers/todo"> TODO </a></li>
+                    <li><a href="/docs/renderers/markdown"> Markdown </a></li>
+                    <li><a href="/docs/renderers/text"> Text </a></li>
+                </ul>
+        
+                <li><h2>Theming</h2></li>
+                <ul>
+                    <li><a href="/docs/theme/builtTheme"> Built in themes </a></li>
+                    <li><a href="/docs/theme/customTheme"> Custom Theming </a></li>
+                </ul>
+            </ul>
+            <p>Still a work in progress, please be patient!</p>
+        </section>
+    </div>
 </body>
 </html>

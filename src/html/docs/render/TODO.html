@@ -17,36 +17,60 @@
     <meta content="#141414" data-react-helmet="true" name="theme-color" />
 </head>
 <body>
-    <pre id="notetedFiglet"></pre>
-    <hr>
-    <span id="links"></span>
-    <span id="redirects"></span>
-    <hr>
-    <h1>Introducing the TODO Renderer</h1>
-    <p>
-        This thing was a pain in the ass to code, but it was worth it. <br>
-        I'll let the gif speak for itself.
-    </p>
-    <a href="/assets/docs/renderers/TODO Example.gif" target="_blank"><img src="/assets/docs/renderers/TODO Example.gif" style="width: 100%; border-radius: 3px;"></a>
-
-    <h2>Features</h2>
-    <ul>
-        <li>[+] Plus, it'll make a new todo.</li>
-        <li>[#] Hashtag, it'll make a new board.</li>
-        <li>[x] X'ed box, it'll mark the todo as... well... <code>completed</code>.</li>
-        <li>[~] Tilde'ed box, it'll mark the todo as... well... <code>cancelled</code>.</li> <br>
-
-        <li>[+] Plus in a todo, it'll add a new sub-todo.</li>
-        <li>[x] Red X marks the delete! It'll delete the todo/board.</li> <br>
-
-        <li>Right click, it'll mark the todo as <code>cancelled</code>.</li>
-        <li>Double click on a todo/board, it'll edit the todo/board name.</li>
-    </ul>
+    <div class="buttonContainer">
+        <a class="home button inactive" href="/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Home.svg" class="icon">
+                <span class="iconText">Home</span>
+            </div>
+        </a>
+        <a class="info button active" href="/docs">
+            <div class="iconContainer">
+                <img src="/assets/icons/Infomation.svg" class="icon">
+                <span class="iconText">Info</span>
+            </div>
+        </a>
+        <a class="github button inactive" href="https://github.com/Noteted/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Github.svg" class="icon">
+                <span class="iconText">Github</span>
+            </div>
+        </a>
+    </div>
     
-    <h2>Few key things to note:</h2>
-    <ul>
-        <li>The renderer is a <b>BUGGY MESS</b> and has rendering problerms. Don't worry, I'm planning to improve the renderering in the future.</li>
-    </ul>
+    <div class="mainFrame">
+        <section>
+            <h1>Introducing the TODO Renderer</h1>
+            <p>
+                This thing was a pain in the ass to code, but it was worth it. <br>
+                I'll let the gif speak for itself.
+            </p>
+            <a href="/assets/docs/renderers/TODO Example.gif" target="_blank"><img src="/assets/docs/renderers/TODO Example.gif" style="width: 100%; border-radius: 3px;"></a>
+        </section>
+        
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>[+] Plus, it'll make a new todo.</li>
+                <li>[#] Hashtag, it'll make a new board.</li>
+                <li>[x] X'ed box, it'll mark the todo as... well... <code>completed</code>.</li>
+                <li>[~] Tilde'ed box, it'll mark the todo as... well... <code>cancelled</code>.</li> <br>
+
+                <li>[+] Plus in a todo, it'll add a new sub-todo.</li>
+                <li>[x] Red X marks the delete! It'll delete the todo/board.</li> <br>
+
+                <li>Right click, it'll mark the todo as <code>cancelled</code>.</li>
+                <li>Double click on a todo/board, it'll edit the todo/board name.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Few key things to note:</h2>
+            <ul>
+                <li>The renderer is a <b>BUGGY MESS</b> and has rendering problerms. Don't worry, I'm planning to improve the renderering in the future.</li>
+            </ul>
+        </section>
+    </div>
 
     <script src="/js/figletNoted.js"></script>
     <script src="/js/load/loadLinks.js"></script>

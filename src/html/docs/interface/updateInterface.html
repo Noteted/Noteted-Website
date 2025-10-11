@@ -17,21 +17,37 @@
     <meta content="#141414" data-react-helmet="true" name="theme-color" />
 </head>
 <body>
-    <pre id="notetedFiglet"></pre>
-    <hr>
-    <span id="links"></span>
-    <span id="redirects"></span>
-    <hr>
-    <h2>This is the update interface.</h2>
-    <a href="/assets/docs/ui/update/Update UI.png" target="_blank"><img src="/assets/docs/ui/update/Update UI.png" width="100%"></a>
-    <p>
-        Really, nothing special. <br>
-        Just shows your version and the github's latest version. <br>
-        You can either go update and it'll put you to the website, or you can continue anyways.
-    </p>
-
-    <script src="/js/figletNoted.js"></script>
-    <script src="/js/load/loadLinks.js"></script>
-    <script src="/js/load/loadRedirects.js"></script>
+    <div class="buttonContainer">
+        <a class="home button inactive" href="/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Home.svg" class="icon">
+                <span class="iconText">Home</span>
+            </div>
+        </a>
+        <a class="info button active" href="/docs">
+            <div class="iconContainer">
+                <img src="/assets/icons/Infomation.svg" class="icon">
+                <span class="iconText">Info</span>
+            </div>
+        </a>
+        <a class="github button inactive" href="https://github.com/Noteted/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Github.svg" class="icon">
+                <span class="iconText">Github</span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="mainFrame">
+        <section>
+            <h2>This is the update interface.</h2>
+            <a href="/assets/docs/ui/update/Update UI.png" target="_blank"><img src="/assets/docs/ui/update/Update UI.png" width="100%"></a>
+            <p>
+                Really, nothing special. <br>
+                Just shows your version and the github's latest version. <br>
+                You can either go update and it'll put you to the website, or you can continue anyways.
+            </p>
+        </section>
+    </div>
 </body>
 </html>

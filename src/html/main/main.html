@@ -18,17 +18,35 @@
     <meta content="#141414" data-react-helmet="true" name="theme-color" />
 </head>
 <body>
-    <pre id="notetedFiglet"></pre>
-    <hr>
-    <span id="links"></span>
-    <span id="redirects"></span>
-    <hr>
+    <div class="buttonContainer">
+        <a class="home button active" href="/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Home.svg" class="icon">
+                <span class="iconText">Home</span>
+            </div>
+        </a>
+        <a class="info button inactive" href="/docs">
+            <div class="iconContainer">
+                <img src="/assets/icons/Infomation.svg" class="icon">
+                <span class="iconText">Info</span>
+            </div>
+        </a>
+        <a class="github button inactive" href="https://github.com/Noteted/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Github.svg" class="icon">
+                <span class="iconText">Github</span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="box">
+        <pre id="notetedFiglet"></pre>
+    </div>
+    
     <span id="infomation"></span>
 
     <script src="/js/figletNoted.js"></script>
-    <script src="/js/load/loadLinks.js"></script>
     <script src="/js/load/loadInfomation.js"></script>
-    <script src="/js/load/loadRedirects.js"></script>
     <script src="/js/fetch/githubChangelog.js"></script>
 </body>
 </html>

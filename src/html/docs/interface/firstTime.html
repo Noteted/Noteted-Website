@@ -17,25 +17,41 @@
     <meta content="#141414" data-react-helmet="true" name="theme-color" />
 </head>
 <body>
-    <pre id="notetedFiglet"></pre>
-    <hr>
-    <span id="links"></span>
-    <span id="redirects"></span>
-    <hr>
-    <h2>First time using Noteted?</h2>
-    <a href="/assets/docs/ui/firstTime/First Time UI.png" target="_blank"><img src="/assets/docs/ui/firstTime/First Time UI.png" width="100%"></a>
-    <p>
-        Don't worry, we'll help you set up the basics! <br>
-        By default, your notes directory goes to <code>~/Documents/Noteted Notes/</code>. <br>
-        You can disable or enable the Discord RPC to tell your friends that "you're busy" or whatnot.
-    </p>
+    <div class="buttonContainer">
+        <a class="home button inactive" href="/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Home.svg" class="icon">
+                <span class="iconText">Home</span>
+            </div>
+        </a>
+        <a class="info button active" href="/docs">
+            <div class="iconContainer">
+                <img src="/assets/icons/Infomation.svg" class="icon">
+                <span class="iconText">Info</span>
+            </div>
+        </a>
+        <a class="github button inactive" href="https://github.com/Noteted/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Github.svg" class="icon">
+                <span class="iconText">Github</span>
+            </div>
+        </a>
+    </div>
     
-    <p>
-        There's probably going to be more options in the future for first time setup.
-    </p>
-
-    <script src="/js/figletNoted.js"></script>
-    <script src="/js/load/loadLinks.js"></script>
-    <script src="/js/load/loadRedirects.js"></script>
+    <div class="mainFrame">
+        <section>
+            <h2>First time using Noteted?</h2>
+            <a href="/assets/docs/ui/firstTime/First Time UI.png" target="_blank"><img src="/assets/docs/ui/firstTime/First Time UI.png" width="100%"></a>
+            <p>
+                Don't worry, we'll help you set up the basics! <br>
+                By default, your notes directory goes to <code>~/Documents/Noteted Notes/</code>. <br>
+                You can disable or enable the Discord RPC to tell your friends that "you're busy" or whatnot.
+            </p>
+            
+            <p>
+                There's probably going to be more options in the future for first time setup.
+            </p>
+        </section>
+    </div>
 </body>
 </html>

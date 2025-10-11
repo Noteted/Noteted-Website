@@ -17,66 +17,82 @@
     <meta content="#141414" data-react-helmet="true" name="theme-color" />
 </head>
 <body>
-    <pre id="notetedFiglet"></pre>
-    <hr>
-    <span id="links"></span>
-    <span id="redirects"></span>
-    <hr>
-    <p>
-        <b>This is the user interface.</b>
-        <a style="color: white; font-size: x-small;">UI can vary between versions.</a>
-    </p>
-    <a href="/assets/docs/ui/main/Main UI.png" target="_blank"><img src="/assets/docs/ui/main/Main UI.png" alt="Main UI" style="max-width: 100%; margin-left: 10px;"></a>
-    <p>
-        You'll spend most of your time staring at this screen. <br>
-        Watch out for burnt ins, I ain't the problem lmao
-    </p>
-
-    <hr>
-
-    <p>
-        <b>This is the new file interface.</b>
-        <a style="color: white; font-size: x-small;">UI can vary between versions.</a>
-    </p>
-    <a href="/assets/docs/ui/main/New File UI.png" target="_blank"><img src="/assets/docs/ui/main/New File UI.png" alt="Noteted UI" style="max-width: 100%; margin-left: 10px;"></a>
-    <p>
-        This is where you can create a new file. You can choose between Markdown, Text or a custom file TODO list. <br>
-        You can rename the file, but if you don't name it anything, it'll be the date of your computer.
-    </p>
-
-    <hr>
-
-    <p>
-        <b>This is the settings interface.</b>
-        <a style="color: white; font-size: x-small;">UI can vary between versions.</a>
-    </p>
-    <a href="/assets/docs/ui/main/Settings UI.png" target="_blank"><img src="/assets/docs/ui/main/Settings UI.png" alt="Noteted UI" style="max-width: 100%; margin-left: 10px;"></a>
-    <p>
-        This is where you can change the settings of Noteted. You can customize the appearance, behavior, and more. <br>
-        First off, this is screenshot outdated. It's still in development version! <br>
-        More settings coming soon in the future though! <br>
-        Your settings is located at <a style="color: white; font-size: x-small;">Depending on your operating system.</a>
-        <ul>
-            <li>Windows: ~/Appdata/Roaming/Noteted</li>
-            <li>Linux: ~/.config/Noteted</li>
-            <li>MacOS: ~/Library/Application Support/Noteted</li>
-        </ul>
-    </p>
-
-    <hr>
-
-    <p>
-        <b>And lastly, this is the Information interface.</b>
-        <a style="color: white; font-size: x-small;">UI can vary between versions.</a>
-    </p>
-    <a href="/assets/docs/ui/main/Info UI.png" target="_blank"><img src="/assets/docs/ui/main/Info UI.png" alt="Noteted UI" style="max-width: 100%; margin-left: 10px;"></a>
-    <p>
-        This hold the useful infomation of Noteted. <br>
-        Version, Link to the website and Link to the github repository. <a style="color: white; font-size: x-small;">This screenshot is from 0.1.0! This UI has been since then.</a>
-    </p>
-
-    <script src="/js/figletNoted.js"></script>
-    <script src="/js/load/loadLinks.js"></script>
-    <script src="/js/load/loadRedirects.js"></script>
+    <div class="buttonContainer">
+        <a class="home button inactive" href="/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Home.svg" class="icon">
+                <span class="iconText">Home</span>
+            </div>
+        </a>
+        <a class="info button active" href="/docs">
+            <div class="iconContainer">
+                <img src="/assets/icons/Infomation.svg" class="icon">
+                <span class="iconText">Info</span>
+            </div>
+        </a>
+        <a class="github button inactive" href="https://github.com/Noteted/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Github.svg" class="icon">
+                <span class="iconText">Github</span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="mainFrame">
+        <section>
+            <p>
+                <b>This is the user interface.</b>
+                <a style="color: white; font-size: x-small;">UI can vary between versions.</a>
+            </p>
+            <a href="/assets/docs/ui/main/Main UI.png" target="_blank"><img src="/assets/docs/ui/main/Main UI.png" alt="Main UI" style="max-width: 100%; margin-left: 10px;"></a>
+            <p>
+                You'll spend most of your time staring at this screen. <br>
+                Watch out for burnt ins, I ain't the problem lmao
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <b>This is the new file interface.</b>
+                <a style="color: white; font-size: x-small;">UI can vary between versions.</a>
+            </p>
+            <a href="/assets/docs/ui/main/New File UI.png" target="_blank"><img src="/assets/docs/ui/main/New File UI.png" alt="Noteted UI" style="max-width: 100%; margin-left: 10px;"></a>
+            <p>
+                This is where you can create a new file. You can choose between Markdown, Text or a custom file TODO list. <br>
+                You can rename the file, but if you don't name it anything, it'll be the date of your computer.
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <b>This is the settings interface.</b>
+                <a style="color: white; font-size: x-small;">UI can vary between versions.</a>
+            </p>
+            <a href="/assets/docs/ui/main/Settings UI.png" target="_blank"><img src="/assets/docs/ui/main/Settings UI.png" alt="Noteted UI" style="max-width: 100%; margin-left: 10px;"></a>
+            <p>
+                This is where you can change the settings of Noteted. You can customize the appearance, behavior, and more. <br>
+                First off, this is screenshot outdated. It's still in development version! <br>
+                More settings coming soon in the future though! <br>
+                Your settings is located at <a style="color: white; font-size: x-small;">Depending on your operating system.</a>
+                <ul>
+                    <li>Windows: ~/Appdata/Roaming/Noteted</li>
+                    <li>Linux: ~/.config/Noteted</li>
+                    <li>MacOS: ~/Library/Application Support/Noteted</li>
+                </ul>
+            </p>
+        </section>
+        
+        <section>
+            <p>
+                <b>And lastly, this is the Information interface.</b>
+                <a style="color: white; font-size: x-small;">UI can vary between versions.</a>
+            </p>
+            <a href="/assets/docs/ui/main/Info UI.png" target="_blank"><img src="/assets/docs/ui/main/Info UI.png" alt="Noteted UI" style="max-width: 100%; margin-left: 10px;"></a>
+            <p>
+                This hold the useful infomation of Noteted. <br>
+                Version, Link to the website and Link to the github repository. <a style="color: white; font-size: x-small;">This screenshot is from 0.1.0! This UI has been since then.</a>
+            </p>
+        </section>
+    </div>
 </body>
 </html>

@@ -17,36 +17,55 @@
     <meta content="#141414" data-react-helmet="true" name="theme-color" />
 </head>
 <body>
-    <pre id="notetedFiglet"></pre>
-    <hr>
-    <span id="links"></span>
-    <span id="redirects"></span>
-    <hr>
-    <h1>So, you discovered theming?</h1>
-    <p>Here are the default built-in themes.</p>
-    <div class="flexClass">
-        <div>
-            <h2 style="text-align: center;"> Dark </h2>
-            <a href="/assets/docs/theme/default theme/dark.png"><img src="/assets/docs/theme/default theme/dark.png" width="100%"></a>
-        </div>
-
-        <div>
-            <h2 style="text-align: center;"> Light </h2>
-            <a href="/assets/docs/theme/default theme/light.png"><img src="/assets/docs/theme/default theme/light.png" width="100%"></a>
-        </div>
-
-        <div>
-            <h2 style="text-align: center;">Pure Black</h2>
-            <a href="/assets/docs/theme/default theme/pure black.png"><img src="/assets/docs/theme/default theme/pure black.png" width="100%"></a>
-        </div>
+    <div class="buttonContainer">
+        <a class="home button inactive" href="/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Home.svg" class="icon">
+                <span class="iconText">Home</span>
+            </div>
+        </a>
+        <a class="info button active" href="/docs">
+            <div class="iconContainer">
+                <img src="/assets/icons/Infomation.svg" class="icon">
+                <span class="iconText">Info</span>
+            </div>
+        </a>
+        <a class="github button inactive" href="https://github.com/Noteted/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Github.svg" class="icon">
+                <span class="iconText">Github</span>
+            </div>
+        </a>
     </div>
-    <p>
-        And that's it. <br>
-        If you want custom themes, I highly suggest you checking out <a href="/docs/theme/customTheme">Custom Themes</a>!
-    </p>
     
-    <script src="/js/figletNoted.js"></script>
-    <script src="/js/load/loadLinks.js"></script>
-    <script src="/js/load/loadRedirects.js"></script>
+    <div class="mainFrame">
+        <section>
+            <h1>So, you discovered theming?</h1>
+            <p>Here are the default built-in themes.</p>
+            <div class="flexClass">
+                <div>
+                    <h2 style="text-align: center;"> Dark </h2>
+                    <a href="/assets/docs/theme/default theme/dark.png"><img src="/assets/docs/theme/default theme/dark.png" width="100%"></a>
+                </div>
+
+                <div>
+                    <h2 style="text-align: center;"> Light </h2>
+                    <a href="/assets/docs/theme/default theme/light.png"><img src="/assets/docs/theme/default theme/light.png" width="100%"></a>
+                </div>
+
+                <div>
+                    <h2 style="text-align: center;">Pure Black</h2>
+                    <a href="/assets/docs/theme/default theme/pure black.png"><img src="/assets/docs/theme/default theme/pure black.png" width="100%"></a>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <p>
+                And that's it. <br>
+                If you want custom themes, I highly suggest you checking out <a href="/docs/theme/customTheme">Custom Themes</a>!
+            </p>
+        </section>
+    </div>
 </body>
 </html>

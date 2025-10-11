@@ -7,40 +7,108 @@
     margin-bottom: 10px; */
     margin-left: 20px;
     margin-right: 20px;
-} a {
-    color: aqua;
-    text-decoration: none;
 } body {
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(17, 17, 17);
 } .flexClass {
     display: flex;
-    gap: 25px;
+    gap: 10px;
+} a {
+    text-decoration: none;
+    color: aqua;
 }
 
 .box {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(70, 70, 70, 0.3);
+    
+    padding: 10px;
+    width: max-content;
+    border-radius: 10px;
+    
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainFrame section {
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(70, 70, 70, 0.3);
+    
+    padding: 10px;
+    border-radius: 10px;
+    
+    margin-top: 10px;
+}
+
+.mainFrameButton {
+    background-color: rgb(24, 24, 24);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(70, 70, 70, 0.3);
+    
     border-radius: 10px;
     padding: 10px;
-} .box > .boxinatext {
-    margin-left: 20px;
-    margin-right: 20px;
+    width: max-content;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.githubReleaseDate {
-    font-size: x-small;
-    color: rgb(205, 205, 205);
-} .githubTag {
-    color: rgb(255, 255, 255);
-    font-size: larger;
-} .githubChangelog {
-    color: rgb(255, 255, 255);
+.buttonContainer {
+    background-color: rgba(20, 20, 20, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(70, 70, 70, 0.3);
+    
+    width: max-content;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+
+    position: sticky;
+    top: 0;
+    
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.codeBox {
-    background-color: rgb(15, 15, 15);
+.active .iconContainer {
+    background-color: rgba(26, 26, 26, 0.75);
+}
+
+.icon {
+    width: 3em;
+    height: 3em;
+    display: inline-block;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
     border-radius: 10px;
-    width: min-content;
-} .codeBox > .codeInAbox {
-    margin-left: 30px;
-    margin-right: 30px;
+    transition: background-color 0.3s ease;
+    gap: 5px;
+}
+
+.iconContainer:hover {
+    background-color: rgba(24, 24, 24, 0.75);
+}
+
+.iconText {
+    font-size: normal;
+    color: white;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

@@ -17,21 +17,33 @@
     <meta content="#141414" data-react-helmet="true" name="theme-color" />
 </head>
 <body>
-    <pre id="notetedFiglet"></pre>
-    <hr>
-    <span id="links"></span>
-    <span id="redirects"></span>
-    <hr>
+    <div class="buttonContainer">
+        <a class="home button inactive" href="/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Home.svg" class="icon">
+                <span class="iconText">Home</span>
+            </div>
+        </a>
+        <a class="info button inactive" href="/docs">
+            <div class="iconContainer">
+                <img src="/ssets/icons/Infomation.svg" class="icon">
+                <span class="iconText">Info</span>
+            </div>
+        </a>
+        <a class="github button inactive" href="https://github.com/Noteted/">
+            <div class="iconContainer">
+                <img src="/assets/icons/Github.svg" class="icon">
+                <span class="iconText">Github</span>
+            </div>
+        </a>
+    </div>
 
-    <p>
-        Stumbled upon a 404 error, eh? <br>
-        Don't worry bout' it, mate. Happens to the best of us. <br>
-        Maybe the page is deleted? Moved? Or just... never existed. <br>
-        Either way, you can head back to <a href="/">>> Home <<</a> by clickin' there!
-    </p>
-
-    <script src="/js/figletNoted.js"></script>
-    <script src="/js/load/loadLinks.js"></script>
-    <script src="/js/load/loadRedirects.js"></script>
+    <div class="box center">
+        <p>
+            Hm? A person?! Hello! <br>
+            Seems like you discovered a not found page, perhaps it got deleted or moved? <br>
+            Either way, you can go back home on the top there!
+        </p>
+    </div>
 </body>
 </html>
